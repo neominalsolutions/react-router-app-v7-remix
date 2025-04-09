@@ -16,6 +16,8 @@ export default function Home() {
 			<Link to="/server-loaders">Server Loaders</Link>
 			{' | '}
 			<Link to="/client-loaders">Client Loaders</Link>
+			{' | '}
+			<Link to="/server-actions">Server Actions</Link>
 			<Demo />
 			<Welcome />;
 		</>
