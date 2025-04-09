@@ -1,6 +1,7 @@
 import type { Route } from './+types/_index';
 import { Welcome } from '../welcome/welcome';
 import Demo from '~/components/Demo';
+import { Link } from 'react-router';
 
 export function meta({}: Route.MetaArgs) {
 	return [
@@ -12,6 +13,9 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
 	return (
 		<>
+			<Link to="/server-loaders">Server Loaders</Link>
+			{' | '}
+			<Link to="/client-loaders">Client Loaders</Link>
 			<Demo />
 			<Welcome />;
 		</>
