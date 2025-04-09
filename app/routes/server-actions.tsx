@@ -10,6 +10,7 @@ export type FormState = {
 	status: 'error' | 'success';
 };
 
+// Not: action ve loader sunucu tabanlı olduğu için export etmezsek ilgili tanımlamalar sunucu tabanlı çalımaz.
 export async function action({ request }: Route.ActionArgs) {
 	let formData = await request.formData();
 	let title = formData.get('title');
